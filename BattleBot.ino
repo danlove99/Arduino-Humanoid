@@ -10,12 +10,19 @@
 #define rl 7 /* right leg */
 #define rf 8/* right foot */
 
+// Defenitions for PWM mapping
+
+#define MIN_PULSE_WIDTH 650
+#define MAX_PULSE_WIDTH 2350
+#define DEFAULT_PULSE_WIDTH 1500
+#define FREQUENCY 50
+
 Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 
 void setup() {
   Serial.begin(9600);
   pwm.begin();
-  pwm.setPWMFreq(60);
+  pwm.setPWMFreq(50);
 
 }
 
