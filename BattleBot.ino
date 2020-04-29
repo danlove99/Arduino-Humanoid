@@ -122,39 +122,73 @@ int pulseWidth(int angle)
   return analog_value;
 }
 
+void show()
+{
+ for (i=0;i<5;i++){
+   forward();
+ }
+ shakeHead();
+ rightAttack();
+ leftAttack();
+ for (i=0;i<5;i++){
+   backward();
+ }
+
+}
+
 void test()
 {
  
   // head test
   pwm.setPWM(hd,0,pulseWidth(180);
+  delay(100);
   pwm.setPWM(hd,0,pulseWidth(20);
+  delay(100);
   // left shoulder test
   pwm.setPWM(ls,0,pulseWidth(180));
+  delay(100);
   pwm.setPWM(ls,0, pulseWidth(20));
+  delay(100);
   // left arm test
   pwm.setPWM(la,0,pulseWidth(180));
+  delay(100);
   pwm.setPWM(la,0, pulseWidth(20));
+  delay(100);
   // right shoulder test
   pwm.setPWM(rs,0,pulseWidth(180));
+  delay(100);
   pwm.setPWM(rs,0, pulseWidth(20));
+  delay(100);
   // right arm test
   pwm.setPWM(ra,0,pulseWidth(180)0);
+  delay(100);
   pwm.setPWM(ra,0, pulseWidth(20));
+  delay(100);
   // left leg test
   pwm.setPWM(ll,0,pulseWidth(180));
+  delay(100);
   pwm.setPWM(ll,0, pulseWidth(20));
+  delay(100);
   // left foot test
   pwm.setPWM(lf,0,pulseWidth(180));
+  delay(100);
   pwm.setPWM(lf,0, pulseWidth(20));
+  delay(100);
   // right leg test
   pwm.setPWM(rl,0, pulseWidth(180));
+  delay(100);
   pwm.setPWM(rl,0, pulseWidth(20));
+  delay(100);
   // right foot test
   pwm.setPWM(rf,0, pulseWidth(180));
+  delay(100);
   pwm.setPWM(rf,0, pulseWidth(20));
+  delay(100);
+  Serial.print('Test complete!')
 }
 
 void loop() 
 {
   test();
+  show();
 }
