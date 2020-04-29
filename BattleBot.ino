@@ -19,32 +19,62 @@ void setup() {
 
 }
 
+void rightAttack()
+{
+  pass;
+}
+
+void leftAttack()
+{
+ pass;
+}
+
+void forward()
+{
+ pass;
+}
+
+void backward()
+{
+ pass;
+}
+
+int pulseWidth(int angle)
+{
+  int pulse_wide, analog_value;
+  pulse_wide = map(angle, 0, 180, MIN_PULSE_WIDTH, MAX_PULSE_WIDTH);
+  analog_value = int(float(pulse_wide) / 1000000 * FREQUENCY * 4096);
+  Serial.println(analog_value);
+  return analog_value;
+}
+
+
 void loop() {
   // head test
-  pwm.setPWM(hd,0,320);
-  pwm.setPWM(hd,0,200);
+  pwm.setPWM(hd,0,pulseWidth(180);
+  pwm.setPWM(hd,0,pulseWidth(20);
   // left shoulder test
-  pwm.setPWM(ls,0,320);
-  pwm.setPWM(ls,0,200);
+  pwm.setPWM(ls,0,pulseWidth(180));
+  pwm.setPWM(ls,0, pulseWidth(20));
   // left arm test
-  pwm.setPWM(la,0,320);
-  pwm.setPWM(la,0,200);
+  pwm.setPWM(la,0,pulseWidth(180));
+  pwm.setPWM(la,0, pulseWidth(20));
   // right shoulder test
-  pwm.setPWM(rs,0,320);
-  pwm.setPWM(rs,0,200);
+  pwm.setPWM(rs,0,pulseWidth(180));
+  pwm.setPWM(rs,0, pulseWidth(20));
   // right arm test
-  pwm.setPWM(ra,0,320);
-  pwm.setPWM(ra,0,200);
+  pwm.setPWM(ra,0,pulseWidth(180)0);
+  pwm.setPWM(ra,0, pulseWidth(20));
   // left leg test
-  pwm.setPWM(ll,0,320);
-  pwm.setPWM(ll,0,200);
+  pwm.setPWM(ll,0,pulseWidth(180));
+  pwm.setPWM(ll,0, pulseWidth(20));
   // left foot test
-  pwm.setPWM(lf,0,320);
-  pwm.setPWM(lf,0,200);
+  pwm.setPWM(lf,0,pulseWidth(180));
+  pwm.setPWM(lf,0, pulseWidth(20));
   // right leg test
-  pwm.setPWM(rl,0,320);
-  pwm.setPWM(rl,0,200);
+  pwm.setPWM(rl,0, pulseWidth(180));
+  pwm.setPWM(rl,0, pulseWidth(20));
   // right foot test
-  pwm.setPWM(rf,0,320);
-  pwm.setPWM(rf,0,200);
+  pwm.setPWM(rf,0, pulseWidth(180));
+  pwm.setPWM(rf,0, pulseWidth(20));
 }
