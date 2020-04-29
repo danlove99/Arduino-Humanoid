@@ -96,8 +96,9 @@ int pulseWidth(int angle)
   return analog_value;
 }
 
-
-void loop() {
+void test()
+{
+ 
   // head test
   pwm.setPWM(hd,0,pulseWidth(180);
   pwm.setPWM(hd,0,pulseWidth(20);
@@ -125,4 +126,9 @@ void loop() {
   // right foot test
   pwm.setPWM(rf,0, pulseWidth(180));
   pwm.setPWM(rf,0, pulseWidth(20));
+}
+
+void loop() 
+{
+  test();
 }
