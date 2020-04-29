@@ -31,7 +31,24 @@ void leftAttack()
 
 void forward()
 {
- pass;
+ pwm.setPWM(lf,0,pulseWidth(80)
+ pwm.setPWM(rf,0,pulseWidth(80)
+ delay(200)
+ pwm.setPWM(ll,0,pulseWidth(110)
+ pwm.setPWM(rl,0,pulseWidth(110)
+ delay(200)
+ pwm.setPWM(lf,0,pulseWidth(90)
+ pwm.setPWM(rf,0,pulseWidth(90)
+ delay(200)
+ pwm.setPWM(lf,0,pulseWidth(100)
+ pwm.setPWM(rf,0,pulseWidth(100)
+ delay(200)
+ pwm.setPWM(ll,0,pulseWidth(70)
+ pwm.setPWM(rl,0,pulseWidth(70)
+ delay(200)
+ pwm.setPWM(lf,0,pulseWidth(90)
+ pwm.setPWM(rf,0,pulseWidth(90)
+ delay(200)
 }
 
 void backward()
