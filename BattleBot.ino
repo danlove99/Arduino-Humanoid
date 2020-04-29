@@ -28,12 +28,31 @@ void setup() {
 
 void rightAttack()
 {
-  // Pass
+ pwm.setPWM(ra, 0, pulseWidth(170);
+ delay(200);
+ pwm.setPWM(ra, 0, pulseWidth(70);
+ delay(50);
+ pwm.setPWM(ra, 0, pulseWidth(170);
+ delay(200);
+ pwm.setPWM(ra, 0, pulseWidth(70);
+ delay(50);
+ pwm.setPWM(ra, 0, pulseWidth(30);
+ delay(100);
+
 }
 
 void leftAttack()
 {
- // Pass
+ pwm.setPWM(la, 0, pulseWidth(170);
+ delay(200);
+ pwm.setPWM(la, 0, pulseWidth(70);
+ delay(50);
+ pwm.setPWM(la, 0, pulseWidth(170);
+ delay(200);
+ pwm.setPWM(la, 0, pulseWidth(70);
+ delay(50);
+ pwm.setPWM(la, 0, pulseWidth(30);
+ delay(100);
 }
 
 void shakeHead()
