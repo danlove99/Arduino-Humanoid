@@ -29,6 +29,20 @@ void leftAttack()
  pass;
 }
 
+void shakeHead()
+{
+ pwm.setPWM(hd, 0, pulseWidth(80);
+ delay(200);
+ pwm.setPWM(hd, 0, pulseWidth(100);
+ delay(200)
+ pwm.setPWM(hd, 0, pulseWidth(80);
+ delay(200);
+ pwm.setPWM(hd, 0, pulseWidth(100);
+ delay(200)
+ pwm.setPWM(hd, 0, pulseWidth(90);
+ delay(200);
+
+}
 void forward()
 {
  pwm.setPWM(lf,0,pulseWidth(80);
