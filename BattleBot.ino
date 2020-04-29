@@ -28,12 +28,12 @@ void setup() {
 
 void rightAttack()
 {
-  pass;
+  // Pass
 }
 
 void leftAttack()
 {
- pass;
+ // Pass
 }
 
 void shakeHead()
