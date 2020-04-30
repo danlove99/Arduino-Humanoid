@@ -28,88 +28,88 @@ void setup() {
 
 void rightAttack()
 {
- pwm.setPWM(ra, 0, pulseWidth(170);
+ pwm.setPWM(ra, 0, pulseWidth(170));
  delay(200);
- pwm.setPWM(ra, 0, pulseWidth(70);
+ pwm.setPWM(ra, 0, pulseWidth(70));
  delay(50);
- pwm.setPWM(ra, 0, pulseWidth(170);
+ pwm.setPWM(ra, 0, pulseWidth(170));
  delay(200);
- pwm.setPWM(ra, 0, pulseWidth(70);
+ pwm.setPWM(ra, 0, pulseWidth(70));
  delay(50);
- pwm.setPWM(ra, 0, pulseWidth(30);
+ pwm.setPWM(ra, 0, pulseWidth(30));
  delay(100);
 
 }
 
 void leftAttack()
 {
- pwm.setPWM(la, 0, pulseWidth(170);
+ pwm.setPWM(la, 0, pulseWidth(170));
  delay(200);
- pwm.setPWM(la, 0, pulseWidth(70);
+ pwm.setPWM(la, 0, pulseWidth(70));
  delay(50);
- pwm.setPWM(la, 0, pulseWidth(170);
+ pwm.setPWM(la, 0, pulseWidth(170));
  delay(200);
- pwm.setPWM(la, 0, pulseWidth(70);
+ pwm.setPWM(la, 0, pulseWidth(70));
  delay(50);
- pwm.setPWM(la, 0, pulseWidth(30);
+ pwm.setPWM(la, 0, pulseWidth(30));
  delay(100);
 }
 
 void shakeHead()
 {
- pwm.setPWM(hd, 0, pulseWidth(80);
+ pwm.setPWM(hd, 0, pulseWidth(80));
  delay(200);
- pwm.setPWM(hd, 0, pulseWidth(100);
- delay(200)
- pwm.setPWM(hd, 0, pulseWidth(80);
+ pwm.setPWM(hd, 0, pulseWidth(100));
  delay(200);
- pwm.setPWM(hd, 0, pulseWidth(100);
- delay(200)
- pwm.setPWM(hd, 0, pulseWidth(90);
+ pwm.setPWM(hd, 0, pulseWidth(80));
+ delay(200);
+ pwm.setPWM(hd, 0, pulseWidth(100));
+ delay(200);
+ pwm.setPWM(hd, 0, pulseWidth(90));
  delay(200);
 
 }
 void forward()
 {
- pwm.setPWM(lf,0,pulseWidth(80);
- pwm.setPWM(rf,0,pulseWidth(80);
+ pwm.setPWM(lf,0,pulseWidth(80));
+ pwm.setPWM(rf,0,pulseWidth(80));
  delay(200);
- pwm.setPWM(ll,0,pulseWidth(110);
- pwm.setPWM(rl,0,pulseWidth(110);
+ pwm.setPWM(ll,0,pulseWidth(110));
+ pwm.setPWM(rl,0,pulseWidth(110));
  delay(200);
- pwm.setPWM(lf,0,pulseWidth(90);
- pwm.setPWM(rf,0,pulseWidth(90);
+ pwm.setPWM(lf,0,pulseWidth(90));
+ pwm.setPWM(rf,0,pulseWidth(90));
  delay(200);
- pwm.setPWM(lf,0,pulseWidth(100);
- pwm.setPWM(rf,0,pulseWidth(100);
+ pwm.setPWM(lf,0,pulseWidth(100));
+ pwm.setPWM(rf,0,pulseWidth(100));
  delay(200);
- pwm.setPWM(ll,0,pulseWidth(70);
- pwm.setPWM(rl,0,pulseWidth(70);
- delay(200):
- pwm.setPWM(lf,0,pulseWidth(90);
- pwm.setPWM(rf,0,pulseWidth(90);
+ pwm.setPWM(ll,0,pulseWidth(70));
+ pwm.setPWM(rl,0,pulseWidth(70));
+ delay(200);
+ pwm.setPWM(lf,0,pulseWidth(90));
+ pwm.setPWM(rf,0,pulseWidth(90));
  delay(200);
 }
 
 void backward()
 {
- pwm.setPWM(lf,0,pulseWidth(80);
- pwm.setPWM(rf,0,pulseWidth(80);
+ pwm.setPWM(lf,0,pulseWidth(80));
+ pwm.setPWM(rf,0,pulseWidth(80));
  delay(200);
- pwm.setPWM(ll,0,pulseWidth(70);
- pwm.setPWM(rl,0,pulseWidth(70);
+ pwm.setPWM(ll,0,pulseWidth(70));
+ pwm.setPWM(rl,0,pulseWidth(70));
  delay(200);
- pwm.setPWM(lf,0,pulseWidth(90);
- pwm.setPWM(rf,0,pulseWidth(90);
+ pwm.setPWM(lf,0,pulseWidth(90));
+ pwm.setPWM(rf,0,pulseWidth(90));
  delay(200);
- pwm.setPWM(lf,0,pulseWidth(100);
- pwm.setPWM(rf,0,pulseWidth(100);
+ pwm.setPWM(lf,0,pulseWidth(100));
+ pwm.setPWM(rf,0,pulseWidth(100));
  delay(200);
- pwm.setPWM(ll,0,pulseWidth(110);
- pwm.setPWM(rl,0,pulseWidth(110);
+ pwm.setPWM(ll,0,pulseWidth(110));
+ pwm.setPWM(rl,0,pulseWidth(110));
  delay(200);
- pwm.setPWM(lf,0,pulseWidth(90);
- pwm.setPWM(rf,0,pulseWidth(90);
+ pwm.setPWM(lf,0,pulseWidth(90));
+ pwm.setPWM(rf,0,pulseWidth(90));
  delay(200);
 }
 
@@ -124,13 +124,13 @@ int pulseWidth(int angle)
 
 void show()
 {
- for (i=0;i<5;i++){
+ for (int i=0;i<5;i++){
    forward();
  }
  shakeHead();
  rightAttack();
  leftAttack();
- for (i=0;i<5;i++){
+ for (int i=0;i<5;i++){
    backward();
  }
 
@@ -140,9 +140,9 @@ void test()
 {
  
   // head test
-  pwm.setPWM(hd,0,pulseWidth(180);
+  pwm.setPWM(hd,0,pulseWidth(180));
   delay(100);
-  pwm.setPWM(hd,0,pulseWidth(20);
+  pwm.setPWM(hd,0,pulseWidth(20));
   delay(100);
   // left shoulder test
   pwm.setPWM(ls,0,pulseWidth(180));
@@ -160,7 +160,7 @@ void test()
   pwm.setPWM(rs,0, pulseWidth(20));
   delay(100);
   // right arm test
-  pwm.setPWM(ra,0,pulseWidth(180)0);
+  pwm.setPWM(ra,0,pulseWidth(180));
   delay(100);
   pwm.setPWM(ra,0, pulseWidth(20));
   delay(100);
@@ -184,7 +184,7 @@ void test()
   delay(100);
   pwm.setPWM(rf,0, pulseWidth(20));
   delay(100);
-  Serial.print('Test complete!')
+  Serial.print("Test complete!");
 }
 
 void loop() 
