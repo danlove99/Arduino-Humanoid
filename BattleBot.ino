@@ -113,6 +113,7 @@ void backward()
  delay(200);
 }
 
+// Mapping the PWM to servo degrees
 int pulseWidth(int angle)
 {
   int pulse_wide, analog_value;
