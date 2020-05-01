@@ -204,6 +204,7 @@ void loop()
   {
     char text[32] = "";
     radio.read(&text, sizeof(text));
+    
     if (text == "Right")
     {
       rightAttack();

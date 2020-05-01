@@ -16,6 +16,11 @@ const char lftM[] = "Left";
 const char fwdM[] = "Forward";
 const char bckwdM[] = "Backward";
 
+// Default states for buttons
+int rghtState = 0;
+int lftState = 0;
+int fwdState = 0;
+int bckwdState =0;
 
 void setup() {
   pinMode(rght, INPUT);
@@ -39,7 +44,7 @@ void loop() {
   }
   if (lftState == HIGH)
   {
-    radio.write(&lftM, sizeof(lfttM));
+    radio.write(&lftM, sizeof(lftM));
   }
   if (fwdState == HIGH)
   {
@@ -47,7 +52,7 @@ void loop() {
   }
   if (bckwdState == HIGH)
   {
-    radio.write(&bckwdtM, sizeof(bckwdM));
+    radio.write(&bckwdM, sizeof(bckwdM));
   }
   delay(1000);
 }
